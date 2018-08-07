@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Front" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwC-p2-OXx">
+                                <rect key="frame" x="0.0" y="631" width="375" height="147"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qif-oW-yPY" userLabel="shadowSettingsButton">
+                                        <rect key="frame" x="17.666666666666664" y="0.0" width="165" height="42.333333333333329"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO8-pt-FcE">
+                                        <rect key="frame" x="18" y="86.666666666666629" width="164.66666666666666" height="42.333333333333343"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DO8-pt-FcE" secondAttribute="height" multiplier="164:42" id="r2Q-7I-4na"/>
+                                        </constraints>
+                                        <state key="normal" title="Settings"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNA-sj-gR2">
+                                        <rect key="frame" x="192.66666666666663" y="86.666666666666629" width="164.33333333333337" height="42.333333333333343"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Help"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oNA-sj-gR2" firstAttribute="width" secondItem="DO8-pt-FcE" secondAttribute="height" multiplier="164:42" id="1ED-i2-N9s"/>
+                                    <constraint firstAttribute="width" secondItem="lwC-p2-OXx" secondAttribute="height" multiplier="375:147" id="GiG-jW-s0f"/>
+                                    <constraint firstItem="oNA-sj-gR2" firstAttribute="leading" secondItem="DO8-pt-FcE" secondAttribute="trailing" constant="10" id="Kk8-1h-ZkZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="DO8-pt-FcE" secondAttribute="bottom" constant="18" id="PDQ-ZM-gvH"/>
+                                    <constraint firstAttribute="trailing" secondItem="oNA-sj-gR2" secondAttribute="trailing" constant="18" id="VE6-Wl-NdQ"/>
+                                    <constraint firstItem="oNA-sj-gR2" firstAttribute="height" secondItem="DO8-pt-FcE" secondAttribute="height" id="cUF-xz-eFB"/>
+                                    <constraint firstItem="oNA-sj-gR2" firstAttribute="bottom" secondItem="DO8-pt-FcE" secondAttribute="bottom" id="nHd-TG-qV0"/>
+                                    <constraint firstItem="DO8-pt-FcE" firstAttribute="leading" secondItem="lwC-p2-OXx" secondAttribute="leading" constant="18" id="ouz-Hk-koH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lwC-p2-OXx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="G77-w3-qRc"/>
+                            <constraint firstItem="lwC-p2-OXx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IWh-Wa-cg8"/>
+                            <constraint firstItem="lwC-p2-OXx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nnl-Pj-YJq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="helpButton" destination="oNA-sj-gR2" id="M0R-ES-A9P"/>
+                        <outlet property="settingsButton" destination="DO8-pt-FcE" id="hUU-Dw-3cz"/>
+                        <outlet property="shadow" destination="qif-oW-yPY" id="yfG-yO-Wv7"/>
+                        <outlet property="statusFrameView" destination="lwC-p2-OXx" id="ABB-0h-nt8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+</document>
