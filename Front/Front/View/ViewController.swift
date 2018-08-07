@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusFrameView: UIView!
     @IBOutlet weak var helpButton: UIButton!
     
-    @IBOutlet weak var shadow: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,26 +26,22 @@ class ViewController: UIViewController {
     }
 
     func adjustCorners() {
+        
+        // setttings button configuration
         self.settingsButton.layer.cornerRadius = 6
-        self.settingsButton.layer.shadowOpacity = 1
-        self.settingsButton.layer.shadowColor = UIColor.black.cgColor
+        self.settingsButton.layer.shadowOpacity = 0.2
+        self.settingsButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         self.settingsButton.layer.shadowRadius = 6
-        self.settingsButton.layer.masksToBounds = true
         
-        shadow.layer.shadowOpacity = 1
-//        shadow.layer.shadowOffset = CGSize(width: 0, height: 0)
-        shadow.layer.cornerRadius = 6
-        shadow.layer.masksToBounds = true
-        
-        
+        // help button configuration
         self.helpButton.layer.cornerRadius = 6
-        self.helpButton.layer.masksToBounds = true
+        self.helpButton.layer.shadowOpacity = 0.2
+        self.helpButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.helpButton.layer.shadowRadius = 6
         
         self.statusFrameView.layer.cornerRadius = 20
         self.statusFrameView.layer.masksToBounds = true
 
-        
-        
     }
 
 }
