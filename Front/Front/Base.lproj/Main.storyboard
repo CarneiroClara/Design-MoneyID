@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Front" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="y4E-bZ-VU0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0750884515273742" green="1" blue="0.9224762252885258" alpha="0.10681668133802817" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwC-p2-OXx">
+                                <rect key="frame" x="0.0" y="520" width="375" height="147"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO8-pt-FcE">
+                                        <rect key="frame" x="18" y="87" width="164.5" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DO8-pt-FcE" secondAttribute="height" multiplier="164:42" id="r2Q-7I-4na"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" red="0.27450980392156865" green="0.46274509803921571" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNA-sj-gR2">
+                                        <rect key="frame" x="192.5" y="87" width="164.5" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                        <state key="normal" title="Help">
+                                            <color key="titleColor" red="0.27450980392156865" green="0.46274509803921571" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ten Dollars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-oO-IIY">
+                                        <rect key="frame" x="28" y="51" width="78" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identifying Dollar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpC-ic-Ag0">
+                                        <rect key="frame" x="28" y="14" width="124" height="21"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
+                                        <color key="textColor" red="0.27450980390000002" green="0.46274509800000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATw-Id-c5k">
+                                        <rect key="frame" x="219" y="8" width="70" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oNA-sj-gR2" firstAttribute="width" secondItem="DO8-pt-FcE" secondAttribute="height" multiplier="164:42" id="1ED-i2-N9s"/>
+                                    <constraint firstItem="zpC-ic-Ag0" firstAttribute="leading" secondItem="lwC-p2-OXx" secondAttribute="leading" constant="28" id="1xY-ZK-bw7"/>
+                                    <constraint firstAttribute="width" secondItem="lwC-p2-OXx" secondAttribute="height" multiplier="375:147" id="GiG-jW-s0f"/>
+                                    <constraint firstItem="oNA-sj-gR2" firstAttribute="leading" secondItem="DO8-pt-FcE" secondAttribute="trailing" constant="10" id="Kk8-1h-ZkZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="DO8-pt-FcE" secondAttribute="bottom" constant="18" id="PDQ-ZM-gvH"/>
+                                    <constraint firstAttribute="trailing" secondItem="oNA-sj-gR2" secondAttribute="trailing" constant="18" id="VE6-Wl-NdQ"/>
+                                    <constraint firstItem="3d5-oO-IIY" firstAttribute="top" secondItem="zpC-ic-Ag0" secondAttribute="bottom" constant="16" id="YFL-4W-Ktd"/>
+                                    <constraint firstItem="oNA-sj-gR2" firstAttribute="height" secondItem="DO8-pt-FcE" secondAttribute="height" id="cUF-xz-eFB"/>
+                                    <constraint firstItem="3d5-oO-IIY" firstAttribute="leading" secondItem="zpC-ic-Ag0" secondAttribute="leading" id="iKM-fM-FzO"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3d5-oO-IIY" secondAttribute="trailing" constant="20" symbolic="YES" id="ku3-Nd-rjP"/>
+                                    <constraint firstItem="zpC-ic-Ag0" firstAttribute="top" secondItem="lwC-p2-OXx" secondAttribute="top" constant="14" id="n75-zM-OPw"/>
+                                    <constraint firstItem="oNA-sj-gR2" firstAttribute="bottom" secondItem="DO8-pt-FcE" secondAttribute="bottom" id="nHd-TG-qV0"/>
+                                    <constraint firstItem="DO8-pt-FcE" firstAttribute="leading" secondItem="lwC-p2-OXx" secondAttribute="leading" constant="18" id="ouz-Hk-koH"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zpC-ic-Ag0" secondAttribute="trailing" constant="20" symbolic="YES" id="zgn-S0-syS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lwC-p2-OXx" firstAttribute="baseline" secondItem="y4E-bZ-VU0" secondAttribute="bottom" id="13H-wk-yVs"/>
+                            <constraint firstItem="lwC-p2-OXx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="G77-w3-qRc"/>
+                            <constraint firstItem="y4E-bZ-VU0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GYO-7r-kB9"/>
+                            <constraint firstItem="lwC-p2-OXx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IWh-Wa-cg8"/>
+                            <constraint firstItem="lwC-p2-OXx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nnl-Pj-YJq"/>
+                            <constraint firstItem="y4E-bZ-VU0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jQj-Jh-zZs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y4E-bZ-VU0" secondAttribute="trailing" id="shP-pN-did"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="helpButton" destination="oNA-sj-gR2" id="M0R-ES-A9P"/>
+                        <outlet property="settingsButton" destination="DO8-pt-FcE" id="hUU-Dw-3cz"/>
+                        <outlet property="statusFrameView" destination="lwC-p2-OXx" id="ABB-0h-nt8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen.png" width="375" height="667"/>
+    </resources>
+</document>
